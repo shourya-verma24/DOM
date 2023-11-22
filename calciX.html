@@ -1,0 +1,40 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>calciX</title>
+  </head>
+  <body>
+    <input type="number" id="n1" placeholder="Enter first number">
+    <input type="number" id="n2" placeholder="Enter second number">
+
+    <button onclick="addition()">ADD</button>
+    <button onclick="subtraction()">SUB</button>
+    <button onclick="multiply()">MUL</button>
+    <button onclick="division()">DIV</button>
+  </body>
+  <script>
+    function addition(){
+      let n1 = document.getElementById("n1").value;
+      let n2 = document.getElementById("n2").value;
+      let ans = Number(n1) + Number(n2);
+      alert(ans);
+    }
+    function subtraction(){
+      let n1 = document.getElementById("n1").value;
+      let n2 = document.getElementById("n2").value;
+      let ans = Number(n1) - Number(n2);
+      alert(ans);
+    }
+    function multiply(){
+      let n1 = document.getElementById("n1").value;
+      let n2 = document.getElementById("n2").value;
+      let ans = Number(n1) * Number(n2);
+      alert(ans);
+    }
+    function division(){
+      let n1 = document.getElementById("n1").value;
+      let n2 = document.getElementById("n2").value;
+      let ans = Number(n1) / Number(n2);
+      alert(ans);
+    }
+  </script>
