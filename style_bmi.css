@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align:center
+}
+.container{
+  display:flex
+}
+.container>input{
+  width: 50%;
+  height: 3rem;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
