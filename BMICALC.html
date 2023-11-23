@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI(づ ◕‿◕ )づ</title>
+  <link rel="stylesheet" href="style_bmi.css">
+</head>
+</head>
+<body>
+  <h1>Calculate Your BMI</h1>
+  <h3>Enter your weight in kg and height in cm</h3>
+  <div class="container">
+    <input type="number"  placeholder= "Enter your weight" id = "Weight">
+    <input type = "number" placeholder = "Enter Your Height"
+      id= "Height">
+  </div>
+  <button onclick= "calci()">Submit</button>
+  <h2 id = "out">Keep Deiting</h2>
+    
+</body>
+<script>
+  function calci(){
+    let weight = document.getElementById("Weight").value
+    let height = document.getElementById("Height").value
+    let bmi = weight/(height*height)
+    if (bmi <= 18.4) {
+      document.getElementById("out").innerHTML = "Your BMI is " + bmi + "You are Underweight (Θ︹Θ)ს"      
+    }
+    else if (bmi >= 18.5 && bmi <= 24.9){
+      document.getElementById("out").innerText = "Your BMI is " + bmi + "You are Normal (•‿•)"
+    }
+    else if (bmi >= 25 && bmi <= 29.9){
+      document.getElementById("out").innerText = "Your BMI is " + bmi + "You are Overweight (✦థ ｪ థ)"
+    }
+    else{
+      document.getElementById("out").innerText = "Your BMI is " + bmi + ", You are Khali(Not Obese so chill)"
+    }
+  }
+</script>
+</html>
